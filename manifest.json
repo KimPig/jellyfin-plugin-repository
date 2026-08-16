@@ -1,0 +1,38 @@
+[
+  {
+    "guid": "41341b7d-9374-4c82-824a-21d360036771",
+    "name": "Attachment Optimizer",
+    "description": "Batches Jellyfin attachment extraction, deduplicates identical files, preserves detected font formats, and safely manages plugin-owned cache data.",
+    "overview": "Batch extraction, deduplication, and managed attachment caching for Jellyfin.",
+    "owner": "KimPig",
+    "category": "General",
+    "versions": [
+      {
+        "version": "12.0.0.0",
+        "changelog": "Jellyfin 12.0-compatible release.\n\n- Extracts missing attachments in one FFmpeg batch.\n- Deduplicates identical content with SHA-256 and hard links.\n- Preserves detected font file formats.\n- Provides opt-in cleanup for plugin-managed cache data.\n\nThe ZIP contains the plugin DLL and complete meta.json metadata.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/KimPig/jellyfin-plugin-attachment-optimizer/releases/download/12.0.0.0/AttachmentOptimizer_12.0.0.0.zip",
+        "checksum": "82269b63523343382dd1d781d71fc863",
+        "timestamp": "2026-08-16T08:25:09Z"
+      }
+    ]
+  },
+  {
+    "guid": "81ea0bd3-d8e0-4f4a-b680-bf8b83a673f7",
+    "name": "Subtitle Font Bridge",
+    "description": "Supplies compatible Jellyfin Web builds with server-installed fonts referenced by ASS/SSA subtitles, including multilingual OpenType family aliases.",
+    "overview": "Resolve ASS/SSA font families from server-installed OpenType fonts.",
+    "owner": "KimPig",
+    "category": "Subtitles",
+    "versions": [
+      {
+        "version": "12.0.0.0",
+        "changelog": "Jellyfin 12.0-compatible release for the customized Jellyfin Web build.\n\n- Resolves exact ASS/SSA font families from server-installed fonts.\n- Indexes multilingual OpenType family aliases from name IDs 1 and 16.\n- Applies normalized alias matching for reliable font lookup.\n\nThe ZIP contains the plugin DLL and complete meta.json metadata.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/KimPig/jellyfin-plugin-subtitle-font-bridge/releases/download/12.0.0.0/SubtitleFontBridge_12.0.0.0.zip",
+        "checksum": "ae63951b2a76b7bf5de49032d212689f",
+        "timestamp": "2026-08-16T08:25:08Z"
+      }
+    ]
+  }
+]
