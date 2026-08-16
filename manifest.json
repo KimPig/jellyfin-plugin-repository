@@ -8,6 +8,14 @@
     "category": "General",
     "versions": [
       {
+        "version": "12.0.0.1",
+        "changelog": "Jellyfin 12.0 compatibility release.\n\n- Prevents empty per-media attachment directories during ordinary attachment delivery.\n- Removes stale empty GUID attachment directories during cache cleanup.\n- Preserves active, non-empty, and unrelated directories.\n\nThe ZIP contains the plugin DLL and complete `meta.json` metadata.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/KimPig/jellyfin-plugin-attachment-optimizer/releases/download/12.0.0.1/AttachmentOptimizer_12.0.0.1.zip",
+        "checksum": "0e1aeab7059ae4652087495dc72d6ec6",
+        "timestamp": "2026-08-16T21:28:02Z"
+      },
+      {
         "version": "12.0.0.0",
         "changelog": "Jellyfin 12.0-compatible release.\n\n- Extracts missing attachments in one FFmpeg batch.\n- Deduplicates identical content with SHA-256 and hard links.\n- Preserves detected font file formats.\n- Provides opt-in cleanup for plugin-managed cache data.\n\nThe ZIP contains the plugin DLL and complete meta.json metadata.",
         "targetAbi": "12.0.0.0",
