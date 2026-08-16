@@ -26,6 +26,14 @@
     "category": "Subtitles",
     "versions": [
       {
+        "version": "12.0.0.1",
+        "changelog": "- Logs requested, missing, and returned ASS/SSA font files for diagnosis.\n- Supports automatic embedded-font retry in the matching customized Jellyfin Web release.\n- Keeps multilingual OpenType family alias resolution.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/KimPig/jellyfin-plugin-subtitle-font-bridge/releases/download/12.0.0.1/SubtitleFontBridge_12.0.0.1.zip",
+        "checksum": "4c47b44e1a1028afda045505899f5e65",
+        "timestamp": "2026-08-16T14:18:50Z"
+      },
+      {
         "version": "12.0.0.0",
         "changelog": "Jellyfin 12.0-compatible release for the customized Jellyfin Web build.\n\n- Resolves exact ASS/SSA font families from server-installed fonts.\n- Indexes multilingual OpenType family aliases from name IDs 1 and 16.\n- Applies normalized alias matching for reliable font lookup.\n\nThe ZIP contains the plugin DLL and complete meta.json metadata.",
         "targetAbi": "12.0.0.0",
