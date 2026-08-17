@@ -2,11 +2,19 @@
   {
     "guid": "41341b7d-9374-4c82-824a-21d360036771",
     "name": "Attachment Optimizer",
-    "description": "Batches Jellyfin attachment extraction, deduplicates identical files, preserves detected font formats, and safely manages plugin-owned cache data.",
-    "overview": "Batch extraction, deduplication, and managed attachment caching for Jellyfin.",
+    "description": "Pre-extracts embedded subtitles, batches attachment extraction, deduplicates identical files, and safely manages plugin-owned cache data.",
+    "overview": "Subtitle pre-extraction and optimized attachment caching for Jellyfin.",
     "owner": "KimPig",
     "category": "General",
     "versions": [
+      {
+        "version": "12.0.0.2",
+        "changelog": "- Add separate library-scan extraction for embedded subtitles and attachments.\n- Add manual extraction tasks under the Attachment Optimizer category.\n- Add independent library filters and optional subtitle codec limits.\n- Redesign the settings page for clearer extractor and optimizer controls.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/KimPig/jellyfin-plugin-attachment-optimizer/releases/download/12.0.0.2/AttachmentOptimizer_12.0.0.2.zip",
+        "checksum": "80e40f19326afee765dad0489dc0f4d3",
+        "timestamp": "2026-08-17T00:25:41Z"
+      },
       {
         "version": "12.0.0.1",
         "changelog": "- Prevents empty per-media attachment directories during ordinary attachment delivery.\n- Removes stale empty GUID attachment directories during cache cleanup.\n- Preserves active, non-empty, and unrelated directories.",
@@ -28,11 +36,19 @@
   {
     "guid": "81ea0bd3-d8e0-4f4a-b680-bf8b83a673f7",
     "name": "Subtitle Font Bridge",
-    "description": "Supplies compatible Jellyfin Web builds with server-installed fonts referenced by ASS/SSA subtitles, including multilingual OpenType family aliases.",
-    "overview": "Resolve ASS/SSA font families from server-installed OpenType fonts.",
+    "description": "Supplies compatible Jellyfin Web builds with matching server OS fonts and fonts cached by Attachment Optimizer.",
+    "overview": "Resolve ASS/SSA font families from server and optimized cached fonts.",
     "owner": "KimPig",
     "category": "Subtitles",
     "versions": [
+      {
+        "version": "12.0.0.2",
+        "changelog": "- Add configurable server OS and Attachment Optimizer font sources.\n- Detect Attachment Optimizer availability and expose active source status.\n- Watch enabled font directories and refresh the multilingual OpenType alias index automatically.",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/KimPig/jellyfin-plugin-subtitle-font-bridge/releases/download/12.0.0.2/SubtitleFontBridge_12.0.0.2.zip",
+        "checksum": "5e16c1b9418885f9646c92b9277a3df2",
+        "timestamp": "2026-08-17T00:25:41Z"
+      },
       {
         "version": "12.0.0.1",
         "changelog": "- Logs requested, missing, and returned ASS/SSA font files for diagnosis.\n- Supports automatic embedded-font retry in the matching customized Jellyfin Web release.\n- Keeps multilingual OpenType family alias resolution.",
