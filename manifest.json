@@ -9,7 +9,7 @@
     "versions": [
       {
         "version": "12.0.0.2",
-        "changelog": "- Add separate library-scan extraction for embedded subtitles and attachments.\n- Add manual extraction tasks under the Attachment Optimizer category.\n- Add independent library filters and optional subtitle codec limits.\n- Redesign the settings page for clearer extractor and optimizer controls.",
+        "changelog": "- Add separate library-scan extraction for embedded subtitles and attachments.\n- Add manual subtitle and attachment extraction tasks under the Attachment Optimizer category.\n- Add independent library filters and optional subtitle codec limits.\n- Store scheduled attachment extraction directly in the deduplicated optimizer cache.\n- Redesign the settings page for clearer extractor and optimizer controls.",
         "targetAbi": "12.0.0.0",
         "sourceUrl": "https://github.com/KimPig/jellyfin-plugin-attachment-optimizer/releases/download/12.0.0.2/AttachmentOptimizer_12.0.0.2.zip",
         "checksum": "80e40f19326afee765dad0489dc0f4d3",
@@ -43,7 +43,7 @@
     "versions": [
       {
         "version": "12.0.0.2",
-        "changelog": "- Add configurable server OS and Attachment Optimizer font sources.\n- Detect Attachment Optimizer availability and expose active source status.\n- Watch enabled font directories and refresh the multilingual OpenType alias index automatically.",
+        "changelog": "- Add settings for server OS fonts and Attachment Optimizer cached fonts, both enabled by default.\n- Detect Attachment Optimizer availability and expose active font-source status.\n- Watch enabled font directories and refresh the multilingual OpenType alias index automatically.\n- Add a dedicated plugin configuration page and source-selection tests.",
         "targetAbi": "12.0.0.0",
         "sourceUrl": "https://github.com/KimPig/jellyfin-plugin-subtitle-font-bridge/releases/download/12.0.0.2/SubtitleFontBridge_12.0.0.2.zip",
         "checksum": "5e16c1b9418885f9646c92b9277a3df2",
